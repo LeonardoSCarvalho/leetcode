@@ -1,18 +1,15 @@
 const longestConsecutive = function (nums) {
   const arr = nums.sort((a, b) => a - b)
   let aux = 0
-  let cont = 1
-  console.log(arr)
+  let count = 1
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i + 1] - arr[i]   === 1) {
-      cont += 1
-      console.log(cont)
-    } else {
-      aux = aux < cont ? cont : aux
-      cont = 1
+    if (arr[i] === arr[i + 1]) continue
+    if (arr[i] - arr[i + 1] == -1) count += 1
+    else {
+      aux = aux < count ? count : aux
+      count = 1
     }
   }
-  
   return aux
 };
 
