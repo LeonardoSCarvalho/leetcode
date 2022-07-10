@@ -6,4 +6,4 @@ const minCostClimbingStairs = function (cost) {
   }
 
   return dp[cost.length];
-};
+};  
