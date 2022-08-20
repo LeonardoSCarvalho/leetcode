@@ -22,5 +22,4 @@ const intToRoman = function(num) {
         }
     }
     return roman;
-    
 };
