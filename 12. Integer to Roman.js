@@ -15,7 +15,7 @@ const intToRoman = function(num) {
         ['IV', 4],
         ['I', 1]
     ];
-    for (var i = 0; i < romanNum.length; i++) {
+    for (let i = 0; i < romanNum.length; i++) {
         while (num >= romanNum[i][1]) {
             roman += romanNum[i][0];
             num -= romanNum[i][1];
